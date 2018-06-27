@@ -1,0 +1,126 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+section {
+  height: 100%;
+}
+.ud_menu_aktive {
+ text-shadow: 2px 2px 5px #EF5350;
+}
+.nav-bar {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  box-shadow: 1px 1px 1px 1px;
+  top: 0;
+  z-index: 1;
+}
+.nav-bar img {
+  justify-content: center;
+  padding: 20px;
+}
+.nav-bar img:hover {
+  transition: .5s;
+  background-color: #E0E0E0;
+}
+.sub-wrapper {
+  display: flex;
+  flex-direction: row;
+  float: right;
+}
+.cancel {
+  float: left;
+}
+.header {
+  justify-content: center;
+  font-size: 20px;
+  font-family: Montserrat;
+  padding-top: 100px;
+  color: #ffffff;
+  text-align: center;
+}
+.header h1 {
+  font-weight: lighter;
+  margin-top: 0px;
+}
+.header a {
+  font-size: 15px;
+  border-radius: 20px;
+  background: #BF360C;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #ffffff;
+}
+#Home-Section {
+  background: linear-gradient(45deg, #000000, #BF360C);
+}
+
+section h1 {
+font-family: Montserrat;
+text-align: center;
+padding-top: 80px;
+color: #BF360C;
+font-weight: lighter;
+}
+.textfield {
+  width: 500px;
+  display: flex;
+  font-family: Montserrat;
+  font-size: 1.1em;
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 60px;
+  opacity: .7;
+}
+@media (max-width:550px) {
+  .textfield {
+    width: 270px;
+  }
+}
+#Skills-Section {
+  height: 100%;
+}
+.grid-layout {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-layout div {
+  margin: 0 auto;
+  width: 140px;
+  padding: 10px;
+  padding-top: 100px;
+}
+.grid-layout div img {
+  margin: 0 auto;
+}
+.grid-layout div h1 {
+  font-family: Montserrat;
+  text-align: center;
+  font-size: 1.2em;
+  padding-top: 0px;
+  color: #BF360C;
+}
+.grid-layout div p {
+  font-family: Montserrat;
+  text-align: justify;
+  font-size: .9em;
+  opacity: .7;
+}
+@media (max-width:600px) {
+ .grid-layout {
+   display: flex;
+   flex-direction: column;
+ }
+ .grid-layout div {
+   width: 240px;
+ }
+ #Work-Section {
+   margin-top: 600px;
+ }
+}
