@@ -85,9 +85,13 @@ font-weight: lighter;
   grid-template-columns: auto auto auto;
   padding: 10px;
 }
+.grid-layout .logo-wrapper {
+  display: flex;
+  justify-content: center;
+}
 .grid-layout div {
   margin: 0 auto;
-  max-width: 140px;
+  max-width: 250px;
   padding: 10px;
   padding-top: 100px;
 }
@@ -120,5 +124,28 @@ font-weight: lighter;
    margin-top: 300px;
  }
  footer {
+   display: flex;
+   justify-content: space-between;
    max-width: 100%;
+   background-color: #BF360C;
+ }
+ footer div {
+   padding: 0px 20px;
+ }
+ footer .copyright {
+   display: flex;
+   align-items: center;
+ }
+ footer p {
+   color: white;
+   font-family: Montserrat;
+ }
+ footer i {
+   color: white;
+   transition: 0.5s;
+   padding: 10px 20px;
+ }
+ footer i:hover {
+   transition: 0.5s;
+   color: #1c1c1c;
  }
