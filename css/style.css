@@ -7,6 +7,9 @@ html, body {
 section {
   height: 100%;
 }
+#Home-Section {
+  background: linear-gradient(45deg, #000000, #BF360C);
+}
 .ud_menu_aktive {
  text-shadow: 2px 2px 5px #EF5350;
 }
@@ -31,9 +34,6 @@ section {
   flex-direction: row;
   float: right;
 }
-.cancel {
-  float: left;
-}
 .header {
   justify-content: center;
   font-size: 20px;
@@ -54,10 +54,6 @@ section {
   text-decoration: none;
   color: #ffffff;
 }
-#Home-Section {
-  background: linear-gradient(45deg, #000000, #BF360C);
-}
-
 section h1 {
 font-family: Montserrat;
 text-align: center;
@@ -65,17 +61,21 @@ padding-top: 80px;
 color: #BF360C;
 font-weight: lighter;
 }
-.textfield {
-  max-width: 500px;
+#About-Section {
+  height: 100%;
+}
+#About-Section .textfield {
+  height: 100vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.textfield p {
   font-family: Montserrat;
   font-size: 1.1em;
   text-align: justify;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  padding-top: 60px;
   opacity: .7;
+  max-width: 500px;
 }
 #Skills-Section {
   height: 100%;
@@ -92,7 +92,7 @@ font-weight: lighter;
   padding-top: 100px;
 }
 .grid-layout div img {
-  
+
 }
 .grid-layout div h1 {
   font-family: Montserrat;
@@ -115,7 +115,10 @@ font-weight: lighter;
  .grid-layout div {
    max-width: 240px;
  }
+}
  #Work-Section {
    margin-top: 300px;
  }
-}
+ footer {
+   max-width: 100%;
+ }
