@@ -50,7 +50,7 @@ $(document).ready(function() {
             if(UD_DIF < UD_AKTUELL || UD_DIF === UD_AKTUELL) {
               UD_AKTUELL = UD_DIF;
               UD_OBJEKT = $(UD_MENU_ELEMENTS[i]);
-              $('body div a img').removeClass('ud_menu_aktive');
+              $('div a img').removeClass('ud_menu_aktive');
               UD_OBJEKT.addClass('ud_menu_aktive');
             }
           }
@@ -58,6 +58,22 @@ $(document).ready(function() {
 
     });
 });
-function contactAppear() {
-  document.getElementById("#contact").style.visibility = "visible";
-}
+
+/* Fade out nav-bar on scrolling down */
+
+$(function() {
+  var header = $('nav-bar');
+  var faded;
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if(scroll > 50) {
+      header.fadeOut();
+      faded = true;
+      console.log(faded);
+    } else {
+      header.fadeIn();
+      faded = false;
+      console.log(faded);
+    }
+  });
+});
