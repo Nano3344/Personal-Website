@@ -14,8 +14,32 @@ padding-top: 80px;
 color: #BF360C;
 font-weight: lighter;
 }
+section hr {
+  border-color: #BF360C;
+  width: 4%;
+}
 .ud_menu_aktive {
  border-bottom: 3px solid #BF360C;
+}
+.stop-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+.splash-screen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #263238;
+}
+.splash-screen div {
+  max-width: 300px;
+}
+.splash-screen hr {
+  width: 33%;
+  border-color: #BF360C;
 }
 @keyframes fadeIn {
   0% {
@@ -26,7 +50,7 @@ font-weight: lighter;
     opacity: 0;
   }
   100% {
-        top: 0px;
+        top: 0
         opacity: 1;
   }
 }
@@ -37,10 +61,8 @@ font-weight: lighter;
   width: 100%;
   background-color: white;
   position: fixed;
-  box-shadow: 1px 1px 1px 1px;
   top: 0;
   z-index: 1;
-  animation: fadeIn 1s;
 }
 .sub-wrapper {
   display: flex;
@@ -68,7 +90,6 @@ font-weight: lighter;
   padding-top: 100px;
   color: #ffffff;
   text-align: center;
-  animation: fadeIn 1s;
 }
 .header h1 {
   font-weight: lighter;
