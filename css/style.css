@@ -229,7 +229,6 @@ fieldset {
 .grid-layout div {
   margin: 0 auto;
   max-width: 500px;
-  padding: 10px;
   padding-top: 50px;
 }
 .grid-layout div h1 {
@@ -251,6 +250,17 @@ fieldset {
  }
 }
 
+/* Work-Section styling */
+
+.EkbWebsite-Project img {
+  width: 280px;
+  height: 150px;
+}
+
+.EkbWebsite-Project img:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
 /* footer styling */
 
 footer {
@@ -270,4 +280,10 @@ footer {
    transition: 0.5s;
    transform: scale(1.4,1.4);
    color: #1c1c1c;
+ }
+ @media (max-width:400px) {
+   footer i {
+     transform: scale(.6,.6);
+     padding: 5px 8px;
+   }
  }
