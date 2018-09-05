@@ -87,6 +87,7 @@ section hr {
 
 #Home-Section {
   background: linear-gradient(45deg, #000000, #BF360C);
+  height: 100%;
 }
 .header {
   justify-content: center;
@@ -251,6 +252,13 @@ fieldset {
 }
 
 /* Work-Section styling */
+
+#Work-Section {
+  height: 100vh;
+}
+.done-projects div {
+  padding: 30px;
+}
 
 .EkbWebsite-Project img {
   width: 280px;
