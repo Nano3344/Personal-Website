@@ -18,13 +18,10 @@ section hr {
   border-color: #BF360C;
   width: 4%;
 }
-.ud_menu_aktive {
- border-bottom: 3px solid #BF360C;
-}
-.stop-scroll {
-  height: 100%;
-  overflow: hidden;
-}
+
+.ud_menu_aktive { border-bottom: 3px solid #BF360C; }
+.stop-scroll { height: 100%;  overflow: hidden; }
+
 .splash-screen {
   width: 100%;
   height: 100%;
@@ -81,6 +78,12 @@ section hr {
 .nav-bar img:hover {
   transition: .5s;
   opacity: 0.3;
+}
+@media (max-width: 680px) {
+.sub-wrapper {
+  float: none;
+  justify-content: center;
+}
 }
 
 /* Home-Section styling */
@@ -207,6 +210,7 @@ fieldset {
   display: flex;
   justify-content: center;
   padding-top: 50px;
+  padding: 20px;
 }
 .textfield p {
   font-family: Montserrat;

@@ -81,7 +81,7 @@ $(function() {
 /* Splash screen */
 
 for(var i = 0; i < 5000; i++) {
-  if(i < 5000) {
+  if(i >= 5000) {
     $('body').addClass('stop-scroll');
   }
   else if(i == 5000) {
